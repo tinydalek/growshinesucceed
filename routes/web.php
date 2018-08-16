@@ -20,6 +20,8 @@ Route::get('contact', 'PagesController@contact');
 
 Route::get('blog', 'BlogPostsController@blog');
 
+Route::get('blog/newpost', 'BlogPostsController@newpost');
+
 Route::get('blog/{id}', 'BlogPostsController@show');
 
-Route::get('newpost', 'BlogPostsController@newpost');
+Route::post('blog', 'BlogPostsController@store');
